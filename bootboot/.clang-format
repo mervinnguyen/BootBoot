@@ -1,0 +1,20 @@
+BasedOnStyle:       LLVM
+IndentWidth:        4
+TabWidth:           4
+UseTab:             Never
+ColumnLimit:        100
+BreakBeforeBraces:  Linux   /*K&R style - standard in embedded C*/
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Right    
+AlignConsecutiveMacros: Enabled
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+    -Regex: '^<.*>'     #Syste headers first
+    Priority: 1
+    -Regex: '^"bootboot'    #Project headers second
+    Priority: 2
+    -Regex: '.*'
+    Priority: 3
