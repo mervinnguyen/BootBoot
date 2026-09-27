@@ -1,5 +1,3 @@
-
-Readme · MD
 # BootBoot
  
 A customizable bare-metal bootloader for the STM32F446. BootBoot performs in-application programming (IAP) of application firmware stored as a binary file on an external microSD card with a FAT32 file system.
